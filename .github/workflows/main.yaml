@@ -9,5 +9,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Docker step
-        uses: ./
+        uses: ./.github/actions/test/
         id: tests
