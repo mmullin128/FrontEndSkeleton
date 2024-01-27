@@ -1,5 +1,6 @@
 name: "Unit Tests"
 description: "Runs jest test files containted in /tests"
 runs:
+  working-directory: ./ 
   using: 'docker'
   image: 'Dockerfile'

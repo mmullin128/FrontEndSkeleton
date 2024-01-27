@@ -10,5 +10,4 @@ jobs:
         uses: actions/checkout@v4
       - name: Docker step
         uses: ./.github/actions/test/
-        working-directory: ./ 
         id: tests
