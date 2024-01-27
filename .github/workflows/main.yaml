@@ -9,6 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Docker step
-        working-directory: ./ 
         uses: ./.github/actions/test/
+        working-directory: ./ 
         id: tests
