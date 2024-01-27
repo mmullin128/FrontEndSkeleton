@@ -1,6 +1,6 @@
 FROM node:18-alpine
-WORKDIR /app
-COPY . .
+WORKDIR /
+COPY ../../../ .
 RUN npm install --include=dev
 CMD ["npm", "test"]
 EXPOSE 3000
