@@ -9,3 +9,4 @@ jobs:
       - name: Unit Tests
         run: npm test
       - name: Docker build
+        run: echo build
