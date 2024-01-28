@@ -1,10 +1,12 @@
 name: main
 on: [push]
 jobs:
-  unit-tests:
+  Test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Unit Tests
-        run: npm test
+        run: |
+          npm install --dev
+          npm test
