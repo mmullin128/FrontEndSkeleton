@@ -4,8 +4,8 @@ jobs:
   unit-tests:
     runs-on: ubuntu-latest
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
+      - name: Checkout
       - uses: actions/checkout@v4
-      - name: Run Docker Container
-        uses: ./.github/actions/test/
+      - name: Unit Tests
+        run: npm test
+      - name: Docker build
