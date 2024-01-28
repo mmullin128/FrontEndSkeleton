@@ -8,6 +8,6 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Docker step
+      - name: Run Docker Container
         uses: ./.github/actions/test/
         id: tests
