@@ -1,14 +1,4 @@
-const express = require('express');
-const app = express();
-
+const { init, close } = require('server.js');
 const PORT = process.env.PORT;
 
-app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-    res.sendFile('./public/index.html');
-})
-
-app.listen(PORT, () => {
-    console.log('listening on port: ', PORT);
-});
+const server = init(PORT);
