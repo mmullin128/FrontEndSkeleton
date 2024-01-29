@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 
-function init(port, options) {
+function init(port, options={}) {
     const app = express();
     app.use(express.static('public'));
 
