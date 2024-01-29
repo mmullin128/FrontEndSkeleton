@@ -21,4 +21,4 @@ jobs:
           docker build -t app:v1 .
       - name: Docker Push
         run: |
-          docker push app:v1
+          docker push mmullin12/app:v1
