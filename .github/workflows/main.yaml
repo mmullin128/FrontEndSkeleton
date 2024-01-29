@@ -18,7 +18,7 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: Docker Build
         run: |
-          docker build -t app:v1 .
+          docker build -t mmullin12/front-end-skeleton .
       - name: Docker Push
         run: |
-          docker push mmullin12/app:v1
+          docker push mmullin12/front-end-skeleton
