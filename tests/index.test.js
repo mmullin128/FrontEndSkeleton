@@ -1,4 +1,4 @@
-const add = require('../src/index.js');
+const add = require('../dist/index.js');
 
 
 test("add", () => {

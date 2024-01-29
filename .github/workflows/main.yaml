@@ -6,10 +6,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Run Tests
+      - name: Build Development App
         run: |
           npm install --include=dev
+      - name: Run Tests
+        run: |
           npm test
+      - name: Wepback Bundling
+        run: |
+          npx webpack --config webpack.config.js
       - name: Docker Login
         env: 
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
