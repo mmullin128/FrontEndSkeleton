@@ -1,8 +1,12 @@
+const express = requrie('express');
+const app = express();
 
-function add(a, b) {
-    return a + b + 1 - 1;
-}
+const PORT = process.env.PORT;
 
-console.log(add(4,5));
+app.get('/', (req, res) => {
+    res.sendFile('./public/index.html');
+});
 
-module.exports = add;
+app.listen(PORT, () => {
+    console.log('listening on port: ', PORT);
+});
