@@ -15,9 +15,7 @@ function init(port, options) {
 
     if (options["close"]) {
         const server = app.listen(port, () => {
-            console.log('listening on port: ', port);
             server.close();
-            console.log('server closed');
         });
         return;
     }
